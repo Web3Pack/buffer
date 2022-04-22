@@ -1,4 +1,4 @@
-const B = require('../').Buffer
+const B = require('../dist').Buffer
 const test = require('tape')
 
 test('base64: ignore whitespace', function (t) {

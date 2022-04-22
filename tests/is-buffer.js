@@ -1,4 +1,4 @@
-const B = require('../').Buffer
+const B = require('../dist').Buffer
 const isBuffer = require('is-buffer')
 const test = require('tape')
 
