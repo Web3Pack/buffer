@@ -2,8 +2,8 @@
   "name": "@web3pack/buffer",
   "version": "7.0.0",
   "description": "Node.js Buffer API, for the browser",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -30,6 +30,8 @@
     "url": "https://github.com/Web3Pack/buffer/issues"
   },
   "scripts": {
+    "build": "npm run clean & tsc",
+    "clean": "rm -rf ./dist",
     "perf": "browserify --debug perf/bracket-notation.js > perf/bundle.js && open perf/index.html",
     "perf-node": "node perf/bracket-notation.js && node perf/concat.js && node perf/copy-big.js && node perf/copy.js && node perf/new-big.js && node perf/new.js && node perf/readDoubleBE.js && node perf/readFloatBE.js && node perf/readUInt32LE.js && node perf/slice.js && node perf/writeFloatBE.js",
     "size": "browserify -r ./ | uglifyjs -c -m | gzip | wc -c",
@@ -45,6 +47,7 @@
     "ieee754": "^1.2.1"
   },
   "devDependencies": {
+    "@types/node": "^17.0.25",
     "airtap": "^3.0.0",
     "benchmark": "^2.1.4",
     "browserify": "^17.0.0",
@@ -55,6 +58,7 @@
     "split": "^1.0.1",
     "tape": "^5.0.1",
     "through2": "^4.0.2",
+    "typescript": "^4.6.3",
     "uglify-js": "^3.11.5"
   },
   "jspm": {
