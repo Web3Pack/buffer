@@ -1,4 +1,4 @@
-# buffer [![ci][ci-image]][ci-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
+# buffer [![ci][ci-image]][ci-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] 
 
 [ci-image]: https://img.shields.io/github/workflow/status/feross/buffer/ci/master
 [ci-url]: https://github.com/feross/buffer/actions
@@ -6,8 +6,8 @@
 [npm-url]: https://npmjs.org/package/buffer
 [downloads-image]: https://img.shields.io/npm/dm/buffer.svg
 [downloads-url]: https://npmjs.org/package/buffer
-[standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
-[standard-url]: https://standardjs.com
+
+
 
 #### The buffer module from [node.js](https://nodejs.org), for the browser.
 
@@ -386,16 +386,6 @@ To run automated browser tests using Saucelabs, ensure that your `SAUCE_USERNAME
     npm test
 
 This is what's run in Travis, to check against various browsers. The list of browsers is kept in the `bin/airtap-es5.yml` and `bin/airtap-es6.yml` files.
-
-## JavaScript Standard Style
-
-This module uses [JavaScript Standard Style](https://github.com/feross/standard).
-
-[![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-
-To test that the code conforms to the style, `npm install` and run:
-
-    ./node_modules/.bin/standard
 
 ## credit
 
