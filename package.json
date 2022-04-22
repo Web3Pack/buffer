@@ -50,7 +50,7 @@
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.25",
-    "airtap": "^3.0.0",
+    "airtap": "^4.0.4",
     "benchmark": "^2.1.4",
     "browserify": "^17.0.0",
     "concat-stream": "^2.0.0",
