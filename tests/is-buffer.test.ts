@@ -1,5 +1,7 @@
 import { Buffer as B } from '../src';
-import isBuffer from 'is-buffer';
+
+// use from self
+const isBuffer = B.isBuffer;
 
 test('is-buffer tests', () => {
     // rewrite above matchers to jest
